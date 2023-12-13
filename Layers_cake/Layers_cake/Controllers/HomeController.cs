@@ -26,5 +26,13 @@ namespace Layers_cake.Controllers
 
             return View();
         }
+        public ActionResult Create()
+        {
+            return View();
+        }
+        public ActionResult Select()
+        {
+            return View();
+        }
     }
 }

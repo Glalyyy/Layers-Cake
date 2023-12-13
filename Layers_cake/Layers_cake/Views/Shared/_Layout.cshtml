@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="~/Content/Image/Home/avt.png">
     <title>Layers Cake</title>
 
 </head>
@@ -21,7 +22,7 @@
             <ul id="nav">
                 <li><a class="margin-menu sub-menu" href=""> Home</a></li>
                 <div class="dropup">
-                    <button class="margin-menu sub-menu dropbtn" href="">PRODUCT</button>
+                    <button class="margin-menu sub-menu dropbtn" href="@Url.Action("Index","Product")">PRODUCT</button>
                     <div class="dropup-content">
                         <a href="">Salfty Cake</a>
                         <a href="">Sweetie Cake</a>
@@ -37,14 +38,15 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container-fluid">
         @RenderBody()
         <hr />
         @*<div id="content" class="mbot">
             @RenderBody()
         </div>*@
+        </div>
         <footer id="footer" class="border-top footer text-muted">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4">
                         <p class="footer-title">Layers Cake</p>
@@ -90,7 +92,6 @@
                 </div>
             </div>
         </footer>
-        </div>
         @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
@@ -116,8 +117,8 @@
     </footer>*@
         @*</div>*@
 
-        @Scripts.Render("~/bundles/jquery")
+        @*@Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+        @RenderSection("scripts", required: false)*@
 </body>
 </html>

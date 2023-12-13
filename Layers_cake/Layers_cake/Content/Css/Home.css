@@ -13,11 +13,11 @@ Css Reuse
     list-style: none;
 }
 
-.container-fluid,
-.carousel-control-next,
-.carousel-control-next-icon {
+.container-fluid {
     padding: 0;
     overflow: hidden;
+    margin-top: 10px;
+    position:relative;
 }
 /* */
 .header-logo {
@@ -92,6 +92,7 @@ Css Reuse
     padding: 0 32px;
     font-family: "Helvetica","Arial",sans-serif;
     display: block;
+    margin-left:55%;
 }
 
 #nav li:hover a {
@@ -188,12 +189,13 @@ Css Reuse
 .time-line {
     margin: .5em 0 0 .5em;
     color: #fff;
-}
+}*/
 
 .carousel-img {
     width: 100%;
+    margin-top:5%;
 }
-*/
+
 #footer {
     background-color: #000;
     bottom: 0;
@@ -236,6 +238,7 @@ Css Reuse
     border: none;
     word-spacing: 1px;
     letter-spacing: 1px;
+    margin-left:55%;
 }
 
 .dropup {
@@ -272,5 +275,157 @@ Css Reuse
     background-color: bisque;
 }
 
+.img-tour {
+    width: 350px;
+    height: 250px;
+    border: 1px solid #000;
+    position: relative;
+}
+.col-lg-4{
+    left:25%;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive1 {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.trend {
+    text-align: center;
+    position: relative;
+    font-size: large;
+    color: blue;
+    font-family: monospace;
+    margin-top: 55px;
+    text-decoration: none;
+    color: deeppink;
+    transition: color ease 0.3s;
+    margin-bottom:50px;
+}
+
+    .trend::after {
+        content: ' ';
+        position: absolute;
+        z-index: -1;
+        width: 20%;
+        height: 10%;
+        left: 40%;
+        bottom: -40%;
+        background-color: lightpink;
+        transition: all ease 0.3s;
+    }
+.trend1 {
+    text-align: center;
+    position: relative;
+    font-size: large;
+    color: blue;
+    font-family: monospace;
+    margin-top: 55px;
+    text-decoration: none;
+    color: deeppink;
+    transition: color ease 0.3s;
+    margin-bottom: 50px;
+}
+
+    .trend1::after {
+        content: ' ';
+        position: center;
+        z-index: -1;
+        width: 25%;
+        height: 15%;
+        left: 45%;
+        bottom: -45%;
+        background-color: lightpink;
+        transition: all ease 0.3s;
+    }
 
 
+    /*sdile dau trang*/
+
+.body1 {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* MÔI TRƯỜNG, GIAO HÀNG, DỊCH VỤ*/
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+.row1 {
+  content: "";
+  display: table;
+  clear: both;
+}

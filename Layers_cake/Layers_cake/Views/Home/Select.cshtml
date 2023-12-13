@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Select";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <link rel="stylesheet" href="~/Content/Css/Select.css" />
+
+}
+<center>
+    <h1>Create Product</h1>
+    <table>
+
+        <tr>
+            <td for="sp_ten" class="tdd">Product's name</td>
+            <td>
+                <input type="text" class="form-control" id="sp_ten" name="sp_ten" placeholder="Product's name"
+                       value="">
+            </td>
+        </tr>
+        <tr>
+            <td for="sp_gia" class="tdd">Price</td>
+            <td>
+                <input type="text" class="form-control" id="sp_gia" name="sp_gia" placeholder="Price"
+                       value="">
+            </td>
+        </tr>
+        <tr>
+            <td for="sp_mota_chitiet" class="tdd">Product details</td>
+            <td>
+                <input type="text" class="form-control" id="sp_mota_chitiet" name="sp_mota_chitiet"
+                       placeholder="Product details" value="">
+            </td>
+        </tr>
+        <tr>
+            <td for="sp_mota_ngan" class="tdd">Product Description</td>
+            <td>
+                <input type="text" class="form-control" id="sp_mota_ngan" name="sp_mota_ngan"
+                       placeholder="Product Description" value="">
+            </td>
+        </tr>
+        <tr>
+            <td for="sp_soluong" class="tdd">Quantity</td>
+            <td>
+                <input type="text" class="form-control" id="sp_soluong" name="sp_soluong"
+                       placeholder="Quantity" value="">
+            </td>
+        </tr>
+        <tr>
+            <td for="sp_soluong" class="tdd">Sold</td>
+            <td>
+                <input type="text" class="form-control" id="sp_soluong" name="sp_soluong"
+                       placeholder="Sold" value="">
+            </td>
+        </tr>
+        <tr>
+            <td for="lsp_ma" class="tdd">Product type</td>
+            <td>
+                <select class="form-control" id="lsp_ma" name="lsp_ma">
+                    <?php foreach ($dataLoaiSanPham as $loaisanpham) : ?>
+                    <option value="<?= $loaisanpham['lsp_ma'] ?>">
+                        <?= $loaisanpham['Banhngot'] ?>
+                    </option>
+                    <?php endforeach; ?>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td for="file-upload">Product images</td>
+            <td><input type="file" id="file-upload" required /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><button class="btn btn-primary" name="btnSave">Save as</button></td>
+        </tr>
+
+
+
+    </table>
+</center>
+
