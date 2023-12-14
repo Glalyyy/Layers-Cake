@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+}
+
+<div class="cart-container">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="product">
+        <img src="/imglayers/banhngot/Macaron_PN04.jpg" alt="Product 1">
+        <div class="product-info">
+            <div class="product-title">Macaron</div>
+            <div class="product-price">$19.99</div>
+            <div class="quantity-container">
+                Quantity:
+                <a href="#" class="quantity-button" onclick="decrement()">-</a>
+                <input type="text" class="quantity-input" value="1" id="quantity">
+                <a href="#" class="quantity-button" onclick="increment()">+</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="~/Content/Image/Home/banhngot/Génoise-PN05.jpg" alt="Product 2">
+        <div class="product-info">
+            <div class="product-title">Génoise</div>
+            <div class="product-price">$29.99</div>
+            <div class="quantity-container">
+                Quantity:
+                <a href="#" class="quantity-button" onclick="decrement()">-</a>
+                <input type="text" class="quantity-input" value="1" id="quantity">
+                <a href="#" class="quantity-button" onclick="increment()">+</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="total">Total: $69.97</div>
+
+    <a href="#" class="checkout-button">Checkout</a>
+</div>
+<script>
+    function increment() {
+        var quantityInput = document.getElementById('quantity');
+    }
+
+    function increment() {
+        var quantityInput = document.getElementById('quantity');
+    }
+
+    function increment() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value, 10);
+        quantityInput.value = currentValue + 1;
+    }
+
+    function decrement() {
+        var quantityInput = document.getElementById('quantity');
+    }
+
+    function increment() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value, 10);
+        quantityInput.value = currentValue + 1;
+    }
+
+    function decrement() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value, 10);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    }
+</script>
+
+
+

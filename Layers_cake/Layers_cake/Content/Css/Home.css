@@ -46,7 +46,7 @@ Css Reuse
     z-index: 1;
     overflow: hidden;
     opacity: 1;
-    background: bisque;
+    background: #FED9ED;
     /*    margin-left: 52em;*/
 }
 
@@ -92,7 +92,7 @@ Css Reuse
     padding: 0 32px;
     font-family: "Helvetica","Arial",sans-serif;
     display: block;
-    margin-left:55%;
+    margin-left:5%;
 }
 
 #nav li:hover a {
@@ -231,48 +231,45 @@ Css Reuse
     text-decoration: none;
 }
 .dropbtn {
-    background-color: bisque;
+    background-color: #FED9ED;
     color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    margin-left:55%;
+    cursor: pointer;
 }
 
-.dropup {
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropup-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #fff;
     min-width: 160px;
-    /*bottom: 50px;*/
-    z-index: 1000;
-    box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-    .dropup-content a {
+    .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
 
-        .dropup-content a:hover {
-            background-color: #ccc
+        .dropdown-content a:hover {
+            background-color: #FED9ED
         }
 
-.dropup:hover .dropup-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropup:hover .dropbtn {
-    background-color: bisque;
+.dropdown:hover .dropbtn {
+    background-color: #FED9ED;
 }
 
 .img-tour {
@@ -310,11 +307,14 @@ div.desc {
     padding: 0 0px;
     float: left;
     width: 100%;
+    z-index: 1;
 }
 .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+    z-index:1;
+
 }
 
 @media only screen and (max-width: 700px) {
